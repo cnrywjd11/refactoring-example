@@ -9,8 +9,7 @@ public ResourcePool get() {
             result = avaliable.pop()
             allocated.add(result);
         } catch (NoSuchElementException e) {
-            result = Resource.create();
-            allocated.add(result)
+            throws new AssertionError("도달 불가");
         }
     }
 
