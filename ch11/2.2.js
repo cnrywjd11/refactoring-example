@@ -5,7 +5,7 @@ function baseCharge(usage) {
 
     const amount =
         bottomBand(usage) * 0.03
-        + middleBand(usage) * 0.05
+        + withinBand(usage) * 0.05
         + topBand(usage) * 0.07;
 
     return usd(amount);
