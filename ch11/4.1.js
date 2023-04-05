@@ -6,6 +6,9 @@ class HeatingPlan {
             bottom >= this._temperatureRange.low && top >= this._temperatureRange.high
         );
     }
+
+    xxNEWwithinRange(aNumberRange) {
+    }
 }
 
 let aPlan = new HeatingPlan();
