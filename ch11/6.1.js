@@ -12,6 +12,6 @@ class HeatingPlain {
 
 let thePlan = new HeatingPlain();
 
-if      (thePlan.targetTemperature > thermostat.currentTemperature) setToHeat();
-else if (thePlan.targetTemperature < thermostat.currentTemperature) setToCool();
+if      (thePlan.xxNEWtargenTemperature(thermostat.selectedTemperature) > thermostat.currentTemperature) setToHeat();
+else if (thePlan.xxNEWtargenTemperature(thermostat.selectedTemperature) < thermostat.currentTemperature) setToCool();
 else setOff();
