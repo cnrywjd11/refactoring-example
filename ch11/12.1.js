@@ -43,9 +43,3 @@ try {
         });
     } else throw e;
 }
-if (status < 0) {
-    errorList.push({
-        order: orderData,
-        errorCode: status,
-    });
-}
