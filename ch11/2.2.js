@@ -22,3 +22,7 @@ function middleBand(usage) {
 function topBand(usage) {
     return usage > 200 ? usage - 200 : 0;
 }
+
+function withinBand(usage) {
+    return usage > 100 ? Math.min(usage, 200) - 100 : 0;
+}
