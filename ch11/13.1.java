@@ -1,13 +1,6 @@
 public ResourcePool get() {
-    Resource result;
-
-    if (available.isEmpty()) {
-        result = Resource.create();
-    } else {
-        result = avaliable.pop();
-    }
+    Resource result = available.isEmpty() ?  Resource.create() : available.pop()
     allocated.add(result);
-
     return result;
 }
 
