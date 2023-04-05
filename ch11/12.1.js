@@ -16,7 +16,7 @@ function localShippingRules(country) {
     if (data) {
         return new ShippingRules(data);
     } else {
-        return -23;
+        throw new OrderProcessingError(-23);
     }
 }
 
