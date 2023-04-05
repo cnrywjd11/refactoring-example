@@ -20,7 +20,12 @@ function calculateShippingCosts(anOrder) {
 }
 
 // 최상위...
-const status = calculateShippingCosts(orderData);
+let status
+try {
+    status = calculateShippingCosts(orderData);
+} catch (e) {
+    throw e;
+}
 if (status < 0) {
     errorList.push({
         order: orderData,
