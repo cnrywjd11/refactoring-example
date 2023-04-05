@@ -25,5 +25,5 @@ function createEmployee(name, typeCode) {
     return new Employee(name, typeCode);
 }
 
-candidate = new Employee(document.name, document.empType);
-leadEngineer = new Employee(document.leadEngineer, 'E');
+candidate = createEmployee(document.name, document.empType);
+leadEngineer = createEmployee(document.leadEngineer, 'E');
