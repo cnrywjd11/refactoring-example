@@ -1,7 +1,6 @@
 class HeatingPlain {
     get targetTemperature() {
-        const selectedTemperature = thermostat.selectedTemperature;
-        return this.xxNEWtargenTemperature(selectedTemperature)
+        return this.xxNEWtargenTemperature(thermostat.selectedTemperature)
     }
 
     xxNEWtargenTemperature(selectedTemperature) {
