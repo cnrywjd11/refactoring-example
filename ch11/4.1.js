@@ -8,6 +8,7 @@ class HeatingPlan {
     }
 
     xxNEWwithinRange(aNumberRange) {
+        return this.withinRange(aNumberRange.low, aNumberRange.high)
     }
 }
 
